@@ -1,0 +1,19 @@
+{
+    "news": [
+        {
+            "title": "Nueva Funcionalidad en el Sitio Web",
+            "content": "Hoy hemos lanzado una nueva funcionalidad que mejora la experiencia del usuario.",
+            "date": "2024-09-25"
+        },
+        {
+            "title": "Evento de Climatización",
+            "content": "El próximo mes participaremos en un evento internacional sobre climatización, donde nos daremos a ver como empresa, ademas de mostrar nuestras instalaciones y nuestros servicios.",
+            "date": "2024-10-10"
+        },
+        {
+            "title": "Actualización de Servicios",
+            "content": "Hemos actualizado nuestra página, para mejorar la interacción con el usuario, además de comodidad, con un presupuesto dinámico, acordes con las preferencias del cliente.",
+            "date": "2024-09-28"
+        }
+    ]
+}

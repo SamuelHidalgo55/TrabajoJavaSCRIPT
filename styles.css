@@ -1,0 +1,893 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- HEADER -------------*/
+
+
+nav{
+  background: linear-gradient(			rgb(255, 255, 0), rgb(0, 0, 255) );
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position:fixed;  
+    z-index:100;  
+    top:0%;  
+    left:0%;  
+    width:100%;  
+}
+
+h1{
+  margin-top: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10rem;
+}
+
+.h1-a{
+  text-decoration: none;
+}
+
+.empresa{
+    display: flex;   
+}
+
+.titulo_logo{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+}
+
+.enlaces{
+    display: flex;
+   gap: 25px;
+   margin-top: 60px;
+   margin-right: 80px;
+    
+}
+
+.pagina{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.3rem;
+    color: #fff;
+   
+}
+
+.enlaces>a:hover{
+  font-size: 1.4rem;
+}
+
+.pagina-actual{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+/* ------------- Main Index -------------*/
+
+h2{
+  margin-top: 12rem;
+  margin-bottom: 1.2rem;
+}
+
+.intro{
+  margin-left: 5rem;
+  margin-right: 7rem;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 2px solid blue;
+  
+}
+
+.p-main{
+  padding-bottom: 5rem;
+}
+
+/* SERVICIOS */
+
+
+.h2-servicios{
+  margin: 3rem 0rem 3rem 0rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container-servicios{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border-bottom: 2px solid blue;
+  padding-bottom: 5rem;
+  
+}
+
+.servicios{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.titulo-servicios{
+  margin-top: 1.2rem;
+  margin-bottom: 1.1rem;
+  text-align: center;
+
+}
+
+.img-servicios{
+  height: 250px;
+  width: 250px;
+  
+}
+
+
+
+/* INFORMACION */
+
+
+
+fieldset{
+  border: 2px solid blue;
+  border-radius: 15px;
+  width: 500px;
+  height: 250px;
+  
+}
+
+fieldset>p{
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+legend{
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.informacion-cards{
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-bottom: 4rem;
+border-bottom: 2px solid blue;
+padding-bottom: 8rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+span{
+  font-weight: bold;
+}
+
+/* ------------- Noticias -------------*/ 
+
+.container-noticias{
+  margin: 5rem 7rem 10rem 5rem;
+}
+
+.titulo-noticias{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.div-noticias{
+  font-size: 1.1rem;
+}
+
+/* ------------- Footer -------------*/ 
+
+
+footer{
+    background-color: #00008B;
+    border-top: 2px solid black;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    padding: 10px 20px 5px 20px;
+    gap: 15px;  
+    color: #fff;
+   
+ }
+
+ .redes_sociales1{
+    border-bottom: 1px solid #fff;
+    padding-left: 18px;
+ }
+
+  .redes_sociales2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+
+  .aviso_legal_enlaces{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    
+  }
+
+ 
+ .container_redes_sociales>.redes_sociales1>a{
+    text-decoration: none;
+    
+ }
+
+ .container_redes_sociales>.redes_sociales2>p{
+  font-size: 15px ;
+  color: #fff;
+  font-size: 13px ;
+}
+
+ footer img{
+    height: 25px;
+    width: 25px; 
+ }
+
+ .negrita{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  
+}
+
+.direccion{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+footer a:hover{
+  color: yellow;
+}
+
+.prohibido{
+  width: 100%;
+  text-align: center; 
+  
+}
+
+.prohibido p{
+  padding: 10px;
+  font-size: 10px;
+}
+
+/* ------------- Formularios -------------*/
+
+body{
+  background-color: rgb(216, 253, 226);
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 80%; 
+  margin: 50px auto; 
+  border: 1px solid grey;
+  border-radius: 40px;
+  background: #fff;
+  margin-top: 10rem;
+}
+
+
+.titulo-form{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.tit-form{
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.tit-total{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input{
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.button-contenedor{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+button{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.valido{
+  border-color: green;
+}
+
+.invalido{
+  border-color: red;
+}
+
+.error{
+  color: red;
+}
+
+
+@media (max-width:900px){
+
+  .intro{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+ 
+  /* SERVICIOS */
+  
+  .h2-servicios{
+    font-size: 2.5rem;
+  }
+  
+  .container-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5rem;
+  }
+  
+  .servicios{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+
+  .servicios>p{
+    font-size: 1.2rem;
+  }
+
+  .titulo-servicios{
+    font-size: 1.5rem;
+  }
+  
+  .titulo-servicios{
+    margin-top: 1.5rem;
+  }
+  
+  .img-servicios{
+    height: 400px;
+    width: 400px;
+    
+  }
+  
+  /* INFORMACION */
+  
+  .informacion-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 4rem;
+  border-bottom: 2px solid blue;
+  padding-bottom: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  }
+
+  fieldset{
+    
+    width: 360px;
+    height: 250px;
+    
+  }
+
+}
+
+/* MEDIA-QUERYS INDEX */
+
+@media (max-width:700px){
+
+  /* HEADER */
+  nav{
+    background: linear-gradient(			rgb(255, 255, 0), rgb(0, 0, 255) );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .empresa{
+    display: flex;   
+    margin-right: 4.5rem;
+  }
+
+  .enlaces{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .enlaces>a{
+    font-size: 1.4rem;
+  }
+
+  .enlaces>a:hover{
+    font-size: 1.6rem;
+  }
+
+}
+
+@media only screen and (max-width: 450px) and (min-width: 400px){
+
+  /* HEADER */
+  nav{
+    background: linear-gradient(			rgb(255, 255, 0), rgb(0, 0, 255) );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .empresa{
+    display: flex;   
+    margin-right: 4.5rem;
+  }
+
+  .enlaces{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .enlaces>a{
+    font-size: 1.4rem;
+  }
+
+  .enlaces>a:hover{
+    font-size: 1.6rem;
+  }
+
+  /* PARRAFO INICIO */
+  .intro{
+    display: flex;
+    max-width: 15rem ;
+    flex-direction: column;
+  }
+ 
+  /* SERVICIOS */
+  
+  .h2-servicios{
+    margin: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  
+  .container-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5rem;
+  }
+  
+  .servicios{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+
+  .p-servicios{
+    width: 300px;
+    text-align: center;
+  }
+
+  .img-servicios{
+   max-width: 300px;
+   max-height: 300px;
+   margin-left: 0.005rem;
+  }
+  
+  /* INFORMACION */
+
+  fieldset{
+    border: 2px solid blue;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+  }
+  
+  /* FOOTER */
+
+footer{
+  background-color: #00008B;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px 5px 20px;
+  gap: 15px;  
+  color: #fff;
+ 
+}
+
+.redes_sociales1{
+  border-bottom: 1px solid #fff;
+  padding-left: 18px;
+  text-align: center;
+}
+
+.redes_sociales2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.aviso_legal_enlaces{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  
+}
+
+.aviso_legal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
+
+@media only screen and (max-width: 400px) and (min-width: 300px){
+
+  /* HEADER */
+  nav{
+    background: linear-gradient(			rgb(255, 255, 0), rgb(0, 0, 255) );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo_logo{
+    font-size: 1.5rem;
+    
+  }
+  
+  .empresa{
+    display: flex;
+    padding-left: 50px;  
+    
+  }
+
+  .enlaces{
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    margin-left: 5rem;
+  }
+
+  .enlaces>a{
+    font-size: 1.2rem;
+  }
+
+  .enlaces>a:hover{
+    font-size: 1.6rem;
+  }
+
+  /* PARRAFO INICIO */
+  .intro{
+    display: flex;
+    max-width: 30rem ;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  /* SERVICIOS */
+  
+  .h2-servicios{
+    margin: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+  
+  .container-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5rem;
+  }
+  
+  .servicios{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+
+  .p-servicios{
+    width: 250px;
+    text-align: center;
+  }
+
+  .img-servicios{
+   max-width: 250px;
+   max-height: 250px;
+   margin-left: 0.005rem;
+  }
+  
+  /* INFORMACION */
+
+  fieldset{
+    border: 2px solid blue;
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    
+  }
+  
+  /* FOOTER */
+
+footer{
+  background-color: #00008B;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px 5px 20px;
+  gap: 15px;  
+  color: #fff;
+ 
+}
+
+.redes_sociales1{
+  border-bottom: 1px solid #fff;
+  padding-left: 18px;
+  text-align: center;
+}
+
+.redes_sociales2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.aviso_legal_enlaces{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  
+}
+
+.aviso_legal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
+
+/*ICONO Flecha*/
+
+.icono-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 25px;
+  width: auto;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.icono-top:hover{
+  transform: translateY(-5px);
+}
+
+/*-------------MAPAS-------------------*/
+.tit-map{
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+#map{
+ margin-bottom: 5rem;
+  height: 500px ;
+  width: 100%;
+ z-index: 1;
+}
+
+/*MAPAS-TARJETAS*/
+
+.titulo-maps{
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.maps-info{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+
+.proyectos-container{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 370px ;
+  border-radius: 10px;
+  box-shadow: 1px 7px 10px 2px #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .3s ease;
+  margin-bottom: 10rem;
+}
+
+.proyectos-container:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 7px 10px 2px blue;
+}
+
+.descripcion{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap:5px;
+  background: linear-gradient(to top, #000, transparent);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 5px;
+  
+
+}
+
+.descripcion h3{
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+
+.descripcion{
+  font-weight: 300;
+}
+
+.descripcion small{
+  color: greenyellow;
+}
+
+/* MEDIA-QUERYS MAPAS */
+
+@media (max-width:700px){
+  .maps-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    

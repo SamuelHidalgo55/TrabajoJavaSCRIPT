@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SevillaClima - Galería</title>
+  <link rel="icon" type="image/png"  href="favicon.png.png">
+  <!-- Sripts y styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <!-- Estilos interno CSS--> 
+  <style>
+   body{   
+    background-color: rgb(216, 253, 226);
+   } 
+
+  nav{
+    background: linear-gradient(rgb(255, 255, 0), rgb(0, 0, 255) );
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    position:fixed;  
+    z-index:100;  
+    top:0%;  
+    left:0%;  
+    width:100%;  
+  }
+
+  h1{
+    margin-top: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10rem;
+  }
+
+  .h1-a{
+  text-decoration: none;
+  }
+
+  .empresa{
+  display: flex;   
+  }
+
+  .titulo_logo{ 
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .logo{
+    height: 100px;
+    width: auto;
+  }
+
+  .enlaces{
+    display: flex;
+    gap: 25px;
+    margin-top: 60px;
+    margin-right: 80px;  
+  }
+
+  .pagina{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .enlaces>a:hover{
+    font-size: 2.3rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .pagina-actual{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  footer{
+    background-color: #00008B;
+    border-top: 2px solid black;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    padding: 10px 20px 5px 20px;
+    gap: 15px;  
+    color: #fff;
+  }
+
+ .redes_sociales1{
+    border-bottom: 1px solid #fff;
+    padding-left: 18px;
+ }
+
+  .redes_sociales2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aviso_legal_enlaces{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+ .container_redes_sociales>.redes_sociales1>a{
+    text-decoration: none;
+  }
+
+ .container_redes_sociales>.redes_sociales2>p{
+  font-size: 15px ;
+  color: #fff;
+  font-size: 13px ;
+  }
+
+ footer img{
+  height: 25px;
+  width: 25px; 
+  margin-bottom: 5px;
+  }
+
+ .negrita{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .direccion{
+    font-size: 13px;
+  }
+
+  footer a:hover{
+  color: rgb(155, 35, 61);
+  }
+
+  .prohibido{
+    width: 100%;
+    text-align: center; 
+  }
+
+  .prohibido p{
+    padding: 10px;
+    font-size: 10px;
+  }
+</style>
+
+</head>
+<body>
+  <!-- BARRA DE NAVEGACIÓN-->
+  <header>
+    <nav>
+        <div class="empresa">
+            <img src="Logo.png" alt="Logo de la empresa" width="500" height="500" class="logo">
+            <a href="index.html" title="Volver a inicio" class="h1-a"><h1 class="titulo_logo">SevillaClima</h1></a>
+        </div>
+        <div class="enlaces">
+            
+            <a href="#" class="pagina-actual">Galería</a>
+            <a  href="presupuesto.html" class="pagina">Presupuesto </a>
+            <a href="contacto.html" class="pagina">Contacto</a>
+        </div>
+    </nav>
+  </header>
+
+  <div class="container" style="margin-top: 15rem; margin-bottom: 10rem;">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Carrousel de imágenes</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+  
+      <!-- slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="carrusel1.jpg" alt="Unidad exterior Hotel" title="Unidad exterior Hotel" style="width:50%; margin-left: 23rem; " >
+        </div>
+  
+        <div class="item">
+          <img src="carrusel2.jpeg" alt="Instalación conductos refrigereción hotel" title="Instalación conductos refrigereción hotel"  style="width:50%; margin-left: 23rem;">
+        </div>
+      
+        <div class="item">
+          <img src="carrusel3.jpeg" alt="Unidad exterior Split" title="Unidad exterior Split" style="width:50%; margin-left: 23rem;;">
+        </div>
+
+        <div class="item">
+          <img src="carrusel4.jpg" alt="Máquina de casette en oficina" title="Máquina de casette en oficina" style="width:50%; margin-left: 23rem;">
+        </div>
+
+        <div class="item">
+          <img src="carrusel5.jpg" alt="Unidad exterior Split de altas frigorías" title="Unidad exterior Split de altas frigorías"  style="width:50%; margin-left: 23rem;">
+        </div>
+
+        <div class="item">
+          <img src="carrusel6.png" alt="Conductos de ventilación fábrica" title="Conductos de ventilación fábrica" style="width:50%; margin-left: 23rem;">
+        </div>
+
+      </div>
+  
+      <!-- controles izquierda y derecha -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- FOOTER-->
+  <footer>
+             
+    <div class="container_redes_sociales">
+
+     <div class="redes_sociales1">
+          <a href="https://www.tiktok.com/" target="_blank"> <img src="tik_tok_logo.png" alt="Logo de Tik-Tok" width="225" height="225" title="Tik-Tok"> </a>
+          <a href="https://www.instagram.com/" target="_blank"> <img src="logo_instagram.png" alt="Logo de instagram" width="262" height="192" title="instagram"> </a>
+          <a href="https://www.facebook.com/" target="_blank"> <img src="facebook_logo.png" alt="Logo de facebook" width="225" height="225" title="facebook"> </a>
+          <a href="https://www.twitter.com/" target="_blank"> <img src="twitter_logo.png" alt="Logo de twitter" width="225" height="225" title="twitter"> </a>
+      </div>
+
+      <div class="redes_sociales2">
+          <p>📧 Sevilla_Clima@gmail.com</p>
+          <p>📞 671 32 45 77</p>
+          <p>☎️ 954 20 20 44</p> 
+      </div>
+
+  </div>
+
+  <div class="aviso_legal">
+      <p> <span class="negrita">SevillaClima</span> all rights reserved</p>
+      <p class="direccion"> Calle: Juan Carvallo nº6 (Sevilla)</p>
+
+      <div class="aviso_legal_enlaces">
+          <a href="avisoLegal.html" title="pinchar para más información" target="_blank">- Aviso legal</a> 
+          <a href="politicaPrivacidad.html" title="pinchar para más información" target="_blank">- Política de privacidad</a>
+          <a href="Cookies.html" title="pinchar para más información" target="_blank">- Cookies</a>
+          <a href="">- Valoraciones u opiniones</a>
+      </div>
+
+  </div>
+
+  <div class="prohibido">
+      <p >Queda totalmente prohibido, la reproducción total o parcial, del contenido de esta página sin el permiso de los dueños</p>
+  </div>
+     
+ </footer>
+</body>
+</html>

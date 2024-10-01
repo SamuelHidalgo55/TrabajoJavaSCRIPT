@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SevillaClima - Presupuesto</title>
+    <link rel="icon" type="image/png"  href="favicon.png.png">
+    <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN-->
+    <header>
+        <nav>
+            <div class="empresa">
+                <img src="Logo.png" alt="Logo de la empresa" width="500" height="500" class="logo">
+                <a href="index.html" title="Volver a inicio" class="h1-a"><h1 class="titulo_logo">SevillaClima</h1></a>
+            </div>
+            <div class="enlaces">
+                
+                <a href="galeria.html" class="pagina">Galería</a>
+                <a  href="#" class="pagina-actual">Presupuesto </a>
+                <a href="contacto.html" class="pagina">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <h2 class="titulo-form"> Datos de contacto:</h2>
+                <!-- Datos usuario -->
+            <form class="form" name="form" id="formulario" method="GET" action="#">
+                
+                <div class="input-contenedor">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="15" required>
+                    <span class="error" id="nombreError"></span>
+                </div>
+
+                <div class="input-contenedor">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="40" required>
+                    <span class="error" id="apellidosError"></span>
+                </div>
+    
+                <div class="input-contenedor">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="9" required>
+                    <span class="error" id="telefonoError"></span>
+                </div>
+    
+                <div class="input-contenedor">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                    <!-- Cálculo de presupuesto -->
+                <h2 class="titulo-form">Presupuesto</h2>
+
+                <div class="input-contenedor">
+                    <label for="producto">Eliga un producto:</label>
+                    <select name="producto" id="producto" required>
+                        <option value="0" disabled selected>Seleccione una opción</option>
+                        <option value="300" > Split</option>
+                        <option value="1000" >suelo-techo</option>
+                        <option value="2000" >Fancoil</option>
+                        <option value="3000" >VRV</option>
+                    </select>
+                </div>
+
+                <div class="input-contenedor">
+                    <label for="plazo">Plazo (meses):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="12" required>
+                </div>
+
+                <div class="input-contenedor">
+                    <label class="tit-form">Máquinas de refrigeración:</label> 
+                    <div class="extras">
+                        <label><input type="checkbox" class="extra" value="200"> Montaje</label> <br>
+                        <label><input type="checkbox" class="extra" value="300"> Montaje + despiece</label> <br>
+                        <label><input type="checkbox" class="extra" value="500"> Auditoría energética</label> <br>
+                        <label><input type="checkbox" class="extra" value="500"> Garantía de montaje</label> <br>
+                        <label><input type="checkbox" class="extra" value="600"> Mantenimiento</label> <br>
+                    </div>
+                </div>
+
+                <div  class="result">
+                    <p class="tit-total">Presupuesto total: <span id="total">0</span></p>
+                </div>
+
+                <h2 class="titulo-form">Condiciones y envío del presupuesto</h2>
+
+                <div class="input-contenedor">
+                    <label>
+                        <input type="checkbox" id="condiciones" required>
+                        Acepto las condiciones de privacidad
+                    </label> <br>
+            
+                    <button type="submit">Enviar Presupuesto</button>
+                    <button type="reset">Resetear</button>
+                </div>
+
+
+
+            </form>
+    
+        </div>
+        
+    </main>
+    <!-- FOOTER -->
+    <footer>
+             
+       <div class="container_redes_sociales">
+
+        <div class="redes_sociales1">
+             <a href="https://www.tiktok.com/" target="_blank"> <img src="tik_tok_logo.png" alt="Logo de Tik-Tok" width="225" height="225" title="Tik-Tok"> </a>
+             <a href="https://www.instagram.com/" target="_blank"> <img src="logo_instagram.png" alt="Logo de instagram" width="262" height="192" title="instagram"> </a>
+             <a href="https://www.facebook.com/" target="_blank"> <img src="facebook_logo.png" alt="Logo de facebook" width="225" height="225" title="facebook"> </a>
+             <a href="https://www.twitter.com/" target="_blank"> <img src="twitter_logo.png" alt="Logo de twitter" width="225" height="225" title="twitter"> </a>
+         </div>
+
+         <div class="redes_sociales2">
+             <p>📧 Sevilla_Clima@gmail.com</p>
+             <p>📞 671 32 45 77</p>
+             <p>☎️ 954 20 20 44</p> 
+         </div>
+
+     </div>
+
+     <div class="aviso_legal">
+         <p> <span class="negrita">SevillaClima</span> all rights reserved</p>
+         <p class="direccion"> Calle: Juan Carvallo nº6 (Sevilla)</p>
+
+         <div class="aviso_legal_enlaces">
+             <a href="avisoLegal.html" title="pinchar para más información" target="_blank">- Aviso legal</a> 
+             <a href="politicaPrivacidad.html" title="pinchar para más información" target="_blank">- Política de privacidad</a>
+             <a href="Cookies.html" title="pinchar para más información" target="_blank">- Cookies</a>
+             <a href="">- Valoraciones u opiniones</a>
+         </div>
+
+     </div>
+
+     <div class="prohibido">
+         <p >Queda totalmente prohibido, la reproducción total o parcial, del contenido de esta página sin el permiso de los dueños</p>
+     </div>
+        
+    </footer>
+    <!-- Script form.js-->
+    <script src="form.js"></script>
+   
+</body>
+</html>
